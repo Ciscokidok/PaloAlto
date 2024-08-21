@@ -1,7 +1,19 @@
----
-- name: Catalyst Switch Commands
-  hosts: Catalyst
-  gather_facts: false
-  
-  roles:
-    - cli_output
+- name: Palo Alto Firewalls HA Pair
+- hosts: '{{ target | default("ha_pair") }}'
+  connection: local
+
+  vars:
+    primary:
+      ip_address: '{{ primary_ip_address }}'
+      username: '{{ username | default(omit) }}'
+      password: '{{ password | default(omit) }}'
+      api_key: '{{ api_key | default(omit) }}'
+
+    secondary:
+      ip_address: '{{ secondary_ip_address }}'
+      username: '{{ username | default(omit) }}'
+      password: '{{ password | default(omit) }}'
+      api_key: '{{ api_key | default(omit) }}'
+
+
+
