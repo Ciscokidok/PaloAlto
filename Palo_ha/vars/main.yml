@@ -10,3 +10,6 @@
     username: '{{ username | default(omit) }}'
     password: '{{ password | default(omit) }}'
     api_key: '{{ api_key | default(omit) }}'
+  primary_ip_address: '192.168.55.11'
+  secondary_ip_address: '192.168.55.12'
+    
