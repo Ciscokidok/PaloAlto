@@ -1,7 +1,4 @@
 ---
-  command: show ip interface brief
-  ansible_network_os: ios
-  
   primary:
     ip_address: '{{ primary_ip_address }}'
     username: '{{ username | default(omit) }}'
