@@ -1,0 +1,7 @@
+---
+- name: Catalyst Switch Commands
+  hosts: Catalyst
+  gather_facts: false
+  
+  roles:
+    - cli_output
