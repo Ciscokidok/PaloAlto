@@ -1,1 +1,3 @@
-
+---
+  command: show ip interface brief
+  ansible_network_os: ios
