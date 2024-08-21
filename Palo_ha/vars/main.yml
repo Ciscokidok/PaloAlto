@@ -1,6 +1,5 @@
 ---
   primary_ip_address: '192.168.55.11'
   secondary_ip_address: '192.168.55.12'
-  username: 'admin'
-  password: '1Jcithof!'
+  
   
