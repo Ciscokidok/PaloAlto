@@ -27,7 +27,7 @@
       python_requirements_info:
       register: pyinfo
 
-    - name: Display Python Info 
+   - name: Display Python Info 
       ansible.builtin.debug:
         msg: '{{ pyinfo.python }}'
 
