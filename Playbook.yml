@@ -1,4 +1,4 @@
-- hosts: '{{ target | default("ha_pair") }}'
+- hosts: palo
   connection: local
 
   vars:
