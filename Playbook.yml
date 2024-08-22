@@ -25,9 +25,9 @@
              ( secondary_active.stdout | from_json).response.result.group["peer-info"]["state-reason"] == 'User requested' # yamllint disable-line
              
     - name: Check env
-      panos_address_object:
-        provider: '{{ provider }}'
-        state: 'gathered'
-        gathered_filter: '*'
+      panos_facts:
+        provider: '{{ palo_provider }}'
+        gather_subset: ['config']
+      register: panfacts
 
    
