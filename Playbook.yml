@@ -23,11 +23,4 @@
       until: ( secondary_active.stdout | from_json).response.result.group["local-info"].state == 'active' and
              ( secondary_active.stdout | from_json).response.result.group["peer-info"].state == 'suspended' and
              ( secondary_active.stdout | from_json).response.result.group["peer-info"]["state-reason"] == 'User requested' # yamllint disable-line
-    - name: show python lib/site paths
-      python_requirements_info:
-      register: pyinfo
-
-    - name: Display Python Info 
-      ansible.builtin.debug:
-        msg: '{{ pyinfo.python }}'
-
+   
