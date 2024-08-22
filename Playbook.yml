@@ -3,9 +3,9 @@
 
   vars:
     primary:
-      ip_address: '{{ primary_ip_address }}'
+      ip_address: 192.168.15.151
     secondary:
-      ip_address: '{{ secondary_ip_address }}'
+      ip_address: 192.168.15.60
       
   tasks:
     - name: Suspend primary device
